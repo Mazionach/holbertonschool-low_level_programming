@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * Prints a string and ends
+ * main - Prints a string and ends
+ *
+ * Return: success
  */
 int main(void)
 {
