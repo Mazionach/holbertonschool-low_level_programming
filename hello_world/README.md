@@ -1,1 +1,1 @@
-C is fun
+My first c scripts for holberton school
