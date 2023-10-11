@@ -5,7 +5,7 @@
  * Return: Success
  */
 int main(void)
-{	
+{
 	char a;
 
 	for (a = 'z'; a >= 'a'; a--)
