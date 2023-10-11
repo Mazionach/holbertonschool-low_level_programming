@@ -9,12 +9,15 @@ int main(void)
 
 	int i;
 
-	putchar('0');
-	for (i = 49; i <= 57; i++)
+	for (i = 48; i <= 57; i++)
 	{
-		putchar(',');
-		putchar(' ');
+		if (i != 48)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		putchar(i);
 	}
+	putchar('\n');
 	return (0);
 }
