@@ -13,6 +13,6 @@ int main(void)
 
 	for (b = 65; b != 91; b++)
 		putchar(b);
-	putchar("\n");
+	putchar(10);
 	return (0);
 }
