@@ -1,5 +1,4 @@
-#include <stdio.h>
-void _putchar(char);
+#include <main.h>
 /**
  * print_alphabet - Prints a to z
  */
