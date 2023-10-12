@@ -2,8 +2,8 @@ CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-CFLAGS = -Wall -Werror -Wextra -pedantic
-CCFLAGS = $(CFLAGS)
+CCFLAGS = -Wall -Werror -Wextra -pedantic
+CFLAGS = $(CCFLAGS)
 
 all: $(OBJ)
 	$(CC) $(CCFLAGS) $(OBJ) -o $(NAME)
