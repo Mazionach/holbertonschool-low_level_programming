@@ -20,7 +20,7 @@ int main(void)
 		else
 			printf("%i", i);
 
-			printf(" ");
+		printf(" ");
 	}
 	return (0);
 }
