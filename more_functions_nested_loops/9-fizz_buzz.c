@@ -20,7 +20,6 @@ int main(void)
 		else
 			printf("%i", i);
 
-		if (i != 99)
 			printf(" ");
 	}
 	return (0);
