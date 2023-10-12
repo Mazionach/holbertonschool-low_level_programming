@@ -10,11 +10,11 @@ void jack_bauer(void)
 	for (mins = 0; mins < 24 * 60; mins++)
 	{
 		_putchar(th + '0');
-                _putchar(h + '0');
-                _putchar(':');
-                _putchar(tm + '0');
-                _putchar(m + '0');
-                _putchar('\n');
+		_putchar(h + '0');
+		_putchar(':');
+		_putchar(tm + '0');
+		_putchar(m + '0');
+		_putchar('\n');
 		m++;
 		if (m > 9)
 		{
