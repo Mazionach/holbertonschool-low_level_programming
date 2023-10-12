@@ -19,8 +19,10 @@ int main(void)
 			printf("Buzz");
 		else
 			printf("%i", i);
-
-		printf(" ");
+		if (i == 99)
+			printf("\n");
+		else
+			printf(" ");
 	}
 	return (0);
 }
