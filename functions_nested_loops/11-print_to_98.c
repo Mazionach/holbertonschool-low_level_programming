@@ -6,8 +6,7 @@ void print_to_98(int n)
 {
 	while (1)
 	{
-		_putchar(n / 10 + '0');
-		_putchar(n % 10 + '0');
+		printf("%i", n);
 		if (n != 98)
 		{
 			_putchar(',');
