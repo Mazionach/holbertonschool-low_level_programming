@@ -18,6 +18,5 @@ void print_times_table(int n)
 		for (j = 1; j <= n; j++)
 			printf(", %3i", i * j);
 		printf("\n");
-		
 	}
 }
