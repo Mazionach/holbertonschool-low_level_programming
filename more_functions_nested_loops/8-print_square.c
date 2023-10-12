@@ -1,4 +1,22 @@
 #include "main.h"
 /**
- * foo - bar
+ * print_square - Prints a square
+ *
+ * @size: Side length of square
  */
+void print_square(int size)
+{
+	if (size <= 0)
+	{
+		_putchar('\n');
+		return;
+	}
+
+	int i, j;
+	for (i = n; i > 0; i--)
+	{
+		for (j = n; j > 0; j--)
+			_putchar('#');
+		_putchar('\n');
+	}
+}
