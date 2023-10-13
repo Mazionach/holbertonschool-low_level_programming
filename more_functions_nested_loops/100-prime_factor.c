@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+int isprime(int);
 /**
  * main - Prints largest prime factor
  *
