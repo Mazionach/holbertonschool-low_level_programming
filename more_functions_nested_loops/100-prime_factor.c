@@ -15,6 +15,7 @@ int main(void)
 		if (isprime(i))
 			if (1231852 % i == 0)
 				largest = i;
+	printf("%i", largest);
 	return (0);
 }
 
