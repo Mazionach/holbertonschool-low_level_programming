@@ -24,7 +24,7 @@ int main(void)
  *
  * @n: the number
  *
- * Returns: 1 if prime
+ * Return: 1 if prime
  */
 int isprime(int n)
 {
@@ -32,6 +32,6 @@ int isprime(int n)
 
 	for (i = sqrt(n); i > 1; i--)
 		if (n % i == 0)
-			return (1);
-	return (0);
+			return (0);
+	return (1);
 }
