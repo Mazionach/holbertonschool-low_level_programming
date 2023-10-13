@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 2; i <= sqrt(1231952); i++)
 		if (isprime(i))
-			if (1231852 % i == 0)
+			if (1231952 % i == 0)
 				largest = i;
 	printf("%i", largest);
 	return (0);
