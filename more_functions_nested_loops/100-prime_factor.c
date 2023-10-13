@@ -11,7 +11,7 @@ int main(void)
 {
 	int i, largest;
 
-	for (i = 2; i <= sqrt(1231952); i++)
+	for (i = 2; i <= 1231952; i++)
 		if (isprime(i))
 			if (1231952 % i == 0)
 				largest = i;
