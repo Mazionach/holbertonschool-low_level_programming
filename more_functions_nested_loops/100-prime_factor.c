@@ -9,9 +9,9 @@ int isprime(int);
  */
 int main(void)
 {
-	int i, largest;
+	long i, largest;
 
-	for (i = 2; i <= 612852475143; i++)
+	for (i = 1; i < 612852475143; i++)
 		if (isprime(i))
 			if (612852475143 % i == 0)
 				largest = i;
