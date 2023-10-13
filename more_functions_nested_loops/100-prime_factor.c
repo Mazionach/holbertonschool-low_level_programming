@@ -17,7 +17,7 @@ int main(void)
 		if (isprime(i))
 			if (612852475143 % i == 0)
 				largest = i;
-	printf("%lu", largest);
+	printf("%l", largest);
 	return (0);
 }
 
