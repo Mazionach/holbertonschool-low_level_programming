@@ -11,9 +11,9 @@ int main(void)
 {
 	int i, largest;
 
-	for (i = 2; i <= 1231952; i++)
+	for (i = 2; i <= 612852475143; i++)
 		if (isprime(i))
-			if (1231952 % i == 0)
+			if (612852475143 % i == 0)
 				largest = i;
 	printf("%i", largest);
 	return (0);
