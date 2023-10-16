@@ -9,15 +9,15 @@ int isprime(int);
  */
 int main(void)
 {
-	long i, largest;
+	long int i, largest;
 
 	largest = 1;
 
-	for (i = 2; i < 612852475143; i++)
+	for (i = 1; i < 612852475143; i++)
 		if (isprime(i))
 			if (612852475143 % i == 0)
 				largest = i;
-	printf("%lu", largest);
+	printf("%l", largest);
 	return (0);
 }
 
