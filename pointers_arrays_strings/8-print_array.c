@@ -1,9 +1,20 @@
 #include "main.h"
 /**
- * reset_to_98 - sets n to 98
- * @n: n to reset
+ * print_array - prints elements of array
+ * @a: array
+ * @n: number of elements
  */
-void reset_to_98(int *n)
+void print_array(int *a, int n)
 {
-	*n = 98;
+	for (; n > 0; n--)
+	{
+		_putchar(*a);
+		a++;
+		if (n != 1)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
+	_putchar(10);
 }
