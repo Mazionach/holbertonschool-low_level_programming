@@ -1,9 +1,17 @@
 #include "main.h"
 /**
- * reset_to_98 - sets n to 98
- * @n: n to reset
+ * _strlen - returns length of string
+ * @s: string
+ * Return: the length
  */
-void reset_to_98(int *n)
+int _strlen(chr *s)
 {
-	*n = 98;
+	int l = 0;
+
+	while(*s)
+	{
+		l++;
+		s++;
+	}
+	return (l);
 }
