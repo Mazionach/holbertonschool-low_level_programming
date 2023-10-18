@@ -22,7 +22,7 @@ int _atoi(char *s)
 		else if (*s >= '0' && *s <= '9')
 		{
 			i = i * 10;
-			tmp = *s - 48
+			tmp = *s - 48;
 			i = i + tmp;
 			visto = 1;
 		}
