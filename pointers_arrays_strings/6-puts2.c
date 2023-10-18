@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts2 - prints odd characters
- * @s: string
+ * @str: string
  */
 void puts2(char *str)
 {
