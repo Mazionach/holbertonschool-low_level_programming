@@ -1,9 +1,20 @@
 #include "main.h"
 /**
- * reset_to_98 - sets n to 98
- * @n: n to reset
+ * puts_half - prints half of string
+ * @str: string
  */
-void reset_to_98(int *n)
+void puts_half(char *str)
 {
-	*n = 98;
+	char *s = str;
+	int i = 0;
+
+	while (*str)
+	{
+		if (i % 2 == 0)
+			s++;
+		str++;
+	}
+	for (; *s; s++)
+		_putchar(*s);
+	_putchar(10);
 }
