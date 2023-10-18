@@ -6,7 +6,7 @@
  */
 int _atoi(char *s)
 {
-	int i = 0, signo = 1;
+	int i = 0, signo = 1, tmp, visto = 0;
 
 	for (; *s; s++)
 	{
@@ -22,9 +22,11 @@ int _atoi(char *s)
 		else if (*s >= '0' && *s <= '9')
 		{
 			i = i * 10;
-			i = i - 48 + *s;
+			tmp = *s - 48
+			i = i + tmp;
+			visto = 1;
 		}
-		else
+		else if (visto)
 		{
 			break;
 		}
