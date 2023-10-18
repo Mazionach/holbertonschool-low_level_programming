@@ -20,4 +20,5 @@ int _atoi(char *s)
 		i = i * 10;
 		i = i + *s - 48;
 	}
+	return (i * signo);
 }
