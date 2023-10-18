@@ -1,9 +1,22 @@
 #include "main.h"
 /**
- * reset_to_98 - sets n to 98
- * @n: n to reset
+ * print_rev - prints reversed string
+ * @s: string
  */
-void reset_to_98(int *n)
+void print_rev(char *s)
 {
-	*n = 98;
+	int i = 0;
+
+	while (*s)
+	{
+		i++;
+		s++;
+	}
+
+	for (; i < 0; i--)
+	{
+		_putchar(*s);
+		s--;
+	}
+	_putchar(10);
 }
