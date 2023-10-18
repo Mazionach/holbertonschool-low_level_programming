@@ -1,9 +1,14 @@
 #include "main.h"
 /**
- * reset_to_98 - sets n to 98
- * @n: n to reset
+ * _strcpy - copies string
+ * @dest: destination string
+ * @src: source string
  */
-void reset_to_98(int *n)
+char *_strcpy(char *dest, char *src)
 {
-	*n = 98;
+	int i;
+	for (i = 0; src[i]; i++)
+		dest[i] = src[i];
+	dest[i] = NULL;
+	return (dest);
 }
