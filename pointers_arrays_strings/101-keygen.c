@@ -21,7 +21,7 @@ int main(void)
 			pass[i] = 32;
 
 	pass[20] = '\0';
-	*c = "abcdABCD.,@123456789";
+	c = "abcdABCD.,@123456789";
 	printf("%s", c);
 	return (0);
 }
