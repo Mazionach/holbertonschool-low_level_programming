@@ -8,7 +8,7 @@
 int main(void)
 {
 	char pass[21];
-	int i, r;
+	int i;
 	time_t t;
 
 	srand((unsigned) time(&t));
