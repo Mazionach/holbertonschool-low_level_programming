@@ -1,9 +1,23 @@
 #include "main.h"
 /**
- * reset_to_98 - sets n to 98
- * @n: n to reset
+ * _atoi - converts string to int
+ * @s: the string
+ * Return: an int
  */
-void reset_to_98(int *n)
+int _atoi(char *s)
 {
-	*n = 98;
+	int i = 0, signo = 1;
+
+	for (; *s; s++)
+	{
+		if (*s == '+')
+			continue;
+		if (*s == '-')
+		{
+			signo = -signo;
+			continue;
+		}
+		i = i * 10;
+		i = i + *s - 48;
+	}
 }
