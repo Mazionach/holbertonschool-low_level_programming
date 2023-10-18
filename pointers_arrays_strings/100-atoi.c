@@ -10,7 +10,7 @@ int _atoi(char *s)
 
 	for (; *s == '\0' || *s > '9' || *s < '0'; s++)
 	{
-		if (*s == '+')
+		if (*s == '+' || *s == ' ')
 			continue;
 		if (*s == '-')
 		{
