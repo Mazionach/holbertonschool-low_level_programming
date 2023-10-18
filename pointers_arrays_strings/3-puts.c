@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * reset_to_98 - sets n to 98
- * @n: n to reset
+ * _puts - prints string
+ * @str: the string
  */
-void reset_to_98(int *n)
+void _puts(char *str)
 {
-	*n = 98;
+	stdout = str;
 }
