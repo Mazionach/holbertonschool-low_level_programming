@@ -1,9 +1,18 @@
 #include "main.h"
 /**
- * reset_to_98 - sets n to 98
- * @n: n to reset
+ * puts2 - prints odd characters
+ * @s: string
  */
-void reset_to_98(int *n)
+void puts2(char *str)
 {
-	*n = 98;
+	int i = 0;
+
+	while (*str)
+	{
+		if (i % 2 == 0)
+			_putchar(*str);
+		str++;
+		i++;
+	}
+	_putchar(10);
 }
