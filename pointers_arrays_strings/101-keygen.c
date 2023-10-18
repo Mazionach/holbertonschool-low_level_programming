@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char pass[21];
+	char pass[21], *c;
 	int i;
 	time_t t;
 
@@ -21,7 +21,7 @@ int main(void)
 			pass[i] = 32;
 
 	pass[20] = '\0';
-	pass = "abcdABCD.,@123456789";
-	printf("%s", pass);
+	c* = "abcdABCD.,@123456789";
+	printf("%s", c);
 	return (0);
 }
