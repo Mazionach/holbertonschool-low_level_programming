@@ -8,18 +8,27 @@ int _atoi(char *s)
 {
 	int i = 0, signo = 1;
 
-	for (;
-	*s && ((*s < 58 && *s > 47) || *s == 43 || *s == 45 || *s == 32);s++)
+	for (; s*; s++)
 	{
 		if (*s == '+' || *s == ' ')
+		{
 			continue;
-		if (*s == '-')
+		}
+		else if (*s == '-')
 		{
 			signo = -signo;
 			continue;
 		}
-		i = i * 10;
-		i = i + *s - 48;
+		else if (*s >= '0' && *s <= '9')
+		{
+			i = i * 10;
+			i = i + *s - 48;
+		}
+		else
+		{
+			break;
+		}
+
 	}
 	return (i * signo);
 }
