@@ -22,6 +22,6 @@ int main(void)
 
 	pass[20] = '\0';
 
-	printf(pass);
+	printf("%s", pass);
 	return (0);
 }
