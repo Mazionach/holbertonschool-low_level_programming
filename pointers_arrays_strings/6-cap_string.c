@@ -11,12 +11,17 @@ char *cap_string(char *s)
 	
 	while (s[i])
 	{
-		if (s[i] >= 'A' && s[i] <= 'Z' && cap == 0)
-			cap = 1;
-		if (s[i] >= 'a' && s[i] <= 'z' && cap == 0)
+		if (cap == 0)
 		{
-			cap = 1;
-			s[i] = s[i] - 32;
+			if (s[i] >= '0' && s[i] <= '9')
+				cap = 1;
+			if (s[i] >= 'A' && s[i] <= 'Z')
+				cap = 1;
+			if (s[i] >= 'a' && s[i] <= 'z')
+			{
+				cap = 1;
+				s[i] = s[i] - 32;
+			}
 		}
 		if (s[i] == ' ' ||
 			s[i] == '	' ||
