@@ -1,10 +1,9 @@
 #include "main.h"
 /**
  * _strcmp - compares two strings
- * @dest: final string
- * @src: other string
- * @n: number of chars to copy
- * Return: pointer to start of buffer
+ * @s1: string 1
+ * @s2: string 2
+ * Return: 0 if equal, difference of first char otherwise
  */
 int _strcmp(char *s1, char *s2)
 {
