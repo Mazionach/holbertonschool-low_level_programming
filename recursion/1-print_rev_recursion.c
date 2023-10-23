@@ -7,7 +7,7 @@ void re_rev(char *s);
 void _print_rev_recursion(char *s)
 {
 	re_rev(s);
-	putchar('\n');
+	_putchar('\n');
 }
 /**
  * re_rev - The recursion of _print_rev_recursion
@@ -18,6 +18,6 @@ void re_rev(char *s)
 	if (*s)
 	{
 		re_rev(++s);
-		putchar(*s);
+		_putchar(*s);
 	}
 }
