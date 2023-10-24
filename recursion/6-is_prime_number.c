@@ -9,8 +9,6 @@ int is_prime_number(int n)
 {
 	if (n > 1)
 		return (re_prim(n, 2));
-	if (n < -1)
-		return (re_prim(-n, 2));
 	return (0);
 }
 
