@@ -7,7 +7,7 @@ int re_sqrt(int, int);
  */
 int _sqrt_recursion(int n)
 {
-	return (re_sqrt(n, 0);
+	return (re_sqrt(n, 0));
 }
 
 
@@ -19,9 +19,9 @@ int _sqrt_recursion(int n)
  */
 int re_sqrt(int n, int c)
 {
-	if (c < n / 2)
-		return (-1);
 	if (c * c == n)
 		return (c);
+	if (c > n / 2)
+		return (-1);
 	return (re_sqrt(n, c + 1));
 }
