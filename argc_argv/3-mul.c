@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - multiplies numbers
  * @argc: command line argument count
@@ -9,9 +10,9 @@ int main(int argc, char *argv[])
 {
 	if (argc < 3)
 	{
-		printf("ERROR");
+		printf("Error\n");
 		return (1);
 	}
-	printf("%i\n", *argv[1] - '0' * *argv[2] - '0');
+	printf("%i\n", atoi(*argv[1]) * *atoi(argv[2]));
 	return (0);
 }
