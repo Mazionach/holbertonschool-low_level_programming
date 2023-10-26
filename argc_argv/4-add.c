@@ -13,10 +13,10 @@ int main(int argc, char *argv[])
 	int j, sum = 0;
 	unsigned int i;
 
-	for (j = 0; j < argc; j++)
+	for (j = 1; j < argc; j++)
 	{
 		for (i = 0; argv[j][i]; i++)
-			if (!(argv[j][i] >= '0' && argv[j][i] <= '9'))
+			if (!isdigit(argv[j][i]))
 				{
 				printf("Error\n");
 				return (1);
