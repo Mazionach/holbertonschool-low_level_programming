@@ -12,6 +12,6 @@ int main(int argc, char *argv[])
 		printf("ERROR");
 		return (1);
 	}
-	printf("%i\n", *argv[1] * *argv[2]);
+	printf("%i\n", *argv[1] - '0' * *argv[2] - '0');
 	return (0);
 }
