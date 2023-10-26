@@ -5,8 +5,9 @@
  * @argv: command line argument list
  * Return: success
  */
-int main(char *argv[])
+int main(int argc, char *argv[])
 {
+	(void)n;
 	printf("%s", argv[0]);
 	return (0);
 }
