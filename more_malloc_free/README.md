@@ -1,0 +1,1 @@
+Checked allocation functions
