@@ -1,0 +1,4 @@
+#ifndef OBJLIKEMACRO
+#define OBJLIKEMACRO
+#define PI 3.14159265359
+#endif
