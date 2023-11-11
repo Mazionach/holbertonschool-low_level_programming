@@ -1,6 +1,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include "3-calc.h"
 
 /**
  * op_add - addition
