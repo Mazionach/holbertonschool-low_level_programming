@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * get_op_func - returns correct function of operator
  * @s: operator char
