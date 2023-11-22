@@ -9,8 +9,8 @@ size_t list_len(const list_t *h)
 {
 	int a = 0;
 
-	for (; h; a++)
-		;
+	for (; h; h = h->next)
+		a++;
 
 	return (a);
 }
