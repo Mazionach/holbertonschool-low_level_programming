@@ -3,7 +3,7 @@
 /**
  * flip_bits - returns number of different bits
  * @n: int 1
- * @m; int 2
+ * @m: int 2
  * Return: the difference
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
