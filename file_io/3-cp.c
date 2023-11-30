@@ -51,7 +51,8 @@ int mainPart2(char **argv, int f1, int f2)
 		tmp = read(f1, buf, 1024);
 		if (tmp == -1)
 		{
-			dprintf(2, "Error: Can't read from file %s\n",
+			dprintf(STDERR_FILENO,
+					"Error: Can't read from file %s\n",
 					argv[1]);
 			close(f1);
 			close(f2);
@@ -59,19 +60,20 @@ int mainPart2(char **argv, int f1, int f2)
 		}
 		if (write(f2, buf, tmp) == -1)
 		{
-			dprintf(2, "Error: Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO
+				, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
 	}
 	if (close(f1) == -1)
 	{
-		dprintf(2, "Error: Can't close fd %i\n", f1);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", f1);
 		close(f2);
 		exit(100);
 	}
 	if (close(f2) == -1)
 	{
-		dprintf(2, "Error: Can't close fd %i\n", f2);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", f2);
 		exit(100);
 	}
 	return (0);
