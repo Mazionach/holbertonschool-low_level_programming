@@ -9,7 +9,7 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_node_t *new;
+	hash_node_t *new, *cur;
 	int i;
 
 	if (!key || !ht)
@@ -24,10 +24,30 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new->key = strdup(key);
 	new->value = strdup(value);
 	if (ht->array[i])
-		new->next = ht->array[i];
+	{
+		cur = ht->array[i];
+		while (cur)
+		{
+			if (strcmp(cur->key, new->key) == 0)
+			{
+				free(cur->value);
+				cur->value = new->value;
+				free(new->key);
+				free(new);
+				break;
+			}
+			cur = cur->next;
+		}
+		if (!cur)
+		{
+			new->next = ht->array[i];
+			ht->array[i] = new;
+		}
+	}
 	else
+	{
 		new->next = NULL;
-
-	ht->array[i] = new;
+		ht->array[i] = new;
+	}
 	return (1);
 }
