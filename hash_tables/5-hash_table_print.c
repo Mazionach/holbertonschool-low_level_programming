@@ -22,8 +22,6 @@ void hash_table_print(const hash_table_t *ht)
 				printf(", ");
 			primero = 0;
 			printf("'%s': '%s'", cur->key, cur->value);
-			if (cur->next)
-				printf(", ");
 		}
 	}
 	printf("}\n");
